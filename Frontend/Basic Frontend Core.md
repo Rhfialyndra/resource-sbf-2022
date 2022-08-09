@@ -30,7 +30,7 @@ Namun, perlu diketahui bahwa HTML **bukan** bahasa pemrograman, karena HTML tida
 * `<h1>` dan `<p>` merupakan contoh elemen dari html untuk menampilkan teks
 <br>
 
-#### HTML Elements
+### HTML Elements
 
 elemen HTML adalah seluruh hal dari awal tag pembuka hingga penutup tag.
 
@@ -51,7 +51,7 @@ Perlu diketahui bahwa tidak semua penulisan elemen HTML berformat `<tag-pembuka>
 
 <br>
 
-#### HTML Tag
+### HTML Tag
 
 tag merupakan awalan dan akhiran (jika memang ada) dari elemen HTML.
 
@@ -65,7 +65,7 @@ tag merupakan awalan dan akhiran (jika memang ada) dari elemen HTML.
 Untuk list lebih lengkap, silahkan kunjungi laman web <https://www.w3schools.com/tags/default.asp>
 <br>
 
-#### HTML Attributes
+### HTML Attributes
 
 Hampir setiap elemen HTML yang ada memiliki atribut. simplenya, atribut adalah informasi tambahan yang bisa kita sisipkan pada tag pembuka suatu elemen. Namun, ada juga elemen yang tidak memiliki atribut apapun, misalnya line break.
 
@@ -80,11 +80,11 @@ Hampir setiap elemen HTML yang ada memiliki atribut. simplenya, atribut adalah i
 Untuk list lebih lengkap, silahkan kunjungi laman web <https://www.w3schools.com/tags/ref_attributes.asp>
 <br>
 
-#### Core HTML Tags
+### Core HTML Tags
 
 ---
 
-##### Paragraphs
+#### Paragraphs
 
 tag `<p>` kita gunakan ketika kita ingin membuat sebuah teks atau paragraf
 
@@ -99,7 +99,7 @@ tag `<p>` kita gunakan ketika kita ingin membuat sebuah teks atau paragraf
 
 <br>
 
-##### Heading
+#### Heading
 
 tag `<hn>` 1<=n<=6 kita gunakan untuk mendeklarasikan heading / judul artikel
 
@@ -114,7 +114,7 @@ tag `<hn>` 1<=n<=6 kita gunakan untuk mendeklarasikan heading / judul artikel
 
 <br>
 
-##### Image
+#### Image
 
 tag `<img/>` kita gunakan untuk mendeklarasikan elemen image.
 
@@ -126,7 +126,7 @@ tag `<img/>` kita gunakan untuk mendeklarasikan elemen image.
 * atribut `alt` menyatakan alternative (text) yang akan ditampilkan, jika gambar tidak bisa ditampilkan. atribut ini tidak wajib, Namun dianjurkan (better practice)
 <br>
 
-##### Links
+#### Links
 
 Kita bisa membuat teks kita sebagai hyperlink sehingga jika diklik, akan "mengantarkan" kita ke tujuan yang tertera.
 link bisa kita deklarasikan dengan tag `<a>`
@@ -138,7 +138,7 @@ link bisa kita deklarasikan dengan tag `<a>`
 * atribut `href` berisikan url tujuan
 <br>
 
-##### lists
+#### lists
 
 pada html, kita juga bisa membuat list (bullet/numbering), yakni dengan outer tag `<ol>` atau `<ul>` dan inner tag `<li>`.
 `<ol>` menyatakan *ordered list*, sedangkan `<ul>` menyatakan *unordered list*
@@ -159,7 +159,7 @@ pada html, kita juga bisa membuat list (bullet/numbering), yakni dengan outer ta
 ```
 <br>
 
-##### Tables
+#### Tables
 ```html
 <table style="width:100%">
   <tr>
@@ -187,7 +187,7 @@ pada html, kita juga bisa membuat list (bullet/numbering), yakni dengan outer ta
 
 <br>
 
-##### Forms
+#### Forms
 
 Pada HTML, kita juga bisa mendeklarasikan formulir untuk menerima input dari user. kita mendeklarasikannya dengan tag `<form>`.
 pada form terdapat beberapa atribut yang harus di isi, yaitu :
@@ -209,7 +209,7 @@ pada contoh di atas form menggunakan `<input>` untuk menerima input dari user. `
 * `name`, yang akan menjadi key atau identifier dari masing-masing input field. valuenya harus unik (tidak ada 2 atau lebih input dengan name yang sama)
 <br>
 
-##### Block-level Element
+#### Block-level Element
 
 Sejauh ini kita sudah mengenal berbagai tag untuk membuat elemen html. masing-masing tag mendefinisikan hal yang berbeda. 
 Namun, HTML juga memiliki elemen yang berfungsi sebagai "wrapper" sehingga berbagai elemen bisa di-*nest* menjadi satu blok elemen (block-level element).
@@ -224,7 +224,7 @@ contohnya adalah tag `<div>`. dengan `<div>`, kita bisa melakukan grouping terha
 ```
 ---
 
-#### Semantic HTML
+### Semantic HTML
 
 Setelah kita mengenal block-level element `<div>`, kita mungkin jadi lebih mengerti bagaimana menyusun elemen-elemen html pada laman web. kita tinggal menyatukan elemen-elemen tertentu dalam `<div>` dan meletakannya seusai dengan keinginan kita. Dengan begitu, layouting menjadi mudah. 
 Namun, ternyata, selalu membungkus elemen ke dalam tag `<div>` bukanlah best practice. karena, dengan begitu, ketika browser kita mengurai dokumen yang berisi banyak sekali `<div>`, maka tiap bagian akan menjadi abstrak / ambigu (div). Oleh karena itu, munculah paradigma "Semantic HTML".
@@ -269,14 +269,14 @@ __syntax__
 
 **Where to Apply CSS?**
 
-###### 1. inline
+#### 1. inline
 
 ```html
 <p style="font-weight:bold;color:red">HELLO</p>
 ```
 * pada inline css, css kita tuliskan pada atribut "style". dengan format `property:value`, dan setiap css dipisah dengan `;`
 
-###### 2. internal
+#### 2. internal
 
 CSS bisa kita deklarasikan dengan tag `<style>` pada HTML kita. Namun, kita perlu reference (selector) terhadap elemen yang ingin dikustomisasi, dengan atribut `class` atau `id`.
 
@@ -302,7 +302,109 @@ CSS bisa kita deklarasikan dengan tag `<style>` pada HTML kita. Namun, kita perl
 </body>
 ```
 
+## 3. JavaScript (DOM Manipulation)
+
+Setelah mempelajari HTML dan CSS, kita sudah bisa membuat laman web yang sangat basic dan cukup estetik. Namun, pada kenyataannya, setiap laman web yang sering kita kunjungi pasti penuh dengan fitur-fitur atau fungsionalitas yang cukup kompleks, misal menghapus teks, mengubah tulisan atau warna ketika sebuah button kita klik, dsb.
+Fungsionalitas ini tidak bisa dilakukann oleh HTML maupun CSS, karena keduanya bukanlah bahasa pemrograman. Oleh karena itu, kita butuh JavaScript untuk melakukan fungsionalitas ini (DOM Manipulation).
+<br>
+
+__DOM__
+![DOM Tree](https://www.w3schools.com/js/pic_htmltree.gif)
+DOM merupakan singkatan dari **D**ocument **O**bject **M**odel. DOM merupakan sebuah platform atau interface yang *language-agnostic* yang memungkinkan script program mengakses dan atau mengubah konten, struktur dan ,style document secara dinamis.
+<br>
+
+Dengan memanfaatkan JavaScript HTML DOM Manipulation, kita bisa melakukan beberapa fungsionalitas terhadap HTML kita, seperti :
+ * Mengubah konten dari elemen HTML
+ * Mengubah style (CSS) dari elemen tertentu
+ * Mengatur logic web ketika terjadi event HTML DOM
+ * Menambah atau menghapus elemen HTML
+
+<br>
+
+Pada JS DOM terdapat dua hal penting yang harus diketahui, yakni **DOM Method** dan **DOM Property**. DOM method memungkinkan kita untuk melakukan aksi tertentu, sedangkan DOM property adalah nilai yang bisa kita dapatkan dan atau ubah.
+
+### Menemukan atau Mendapatkan Element HTML (referencing).
+Sebelum kita memanipulasi sebuah elemen html, kita harus mendapatkan (referencing) elemen html tersebut terlebih dahulu. JavaScript memiliki beberapa cara untuk melakukannya, yakni :
+* document.getElementById(INSERT_ID_STRING)
+* document.getElementsByClassName(INSERT_CLASSNAME_STRING)
+* document.getElementsByTagName(INSERT_TAG_STRING)
+<br>
+
+Setelah mendapatkan reference ke elemen yang kita inginkan, baru kita bisa memanipulasi elemen HTML tersebut.
+
+**example**
+
+```html
+<head>
+   <script>
+      const pageTitle = document.getElementByID("title");   // menemukan (referencing) elemen dengan id "title"
+      pageTitle.innerHTML = "THIS TITLE HAS BEEN CHANGED";  // Mengubah (memanipulasi) konten dari heading
+   </script> 
+</head>
+<body>
+    <div>
+        <h1 id="title">HELLO</h1>
+        <p class="content">WORLD</p>
+    </div>
+</body>
+```
+untuk list lebih lengkapnya, silahkan kunjungi laman web https://www.w3schools.com/jsref/default.asp
+
+<br>
+
+### DOM Events and Event Listeners
+Kita juga bisa melakukan manipulasi DOM ketika terjadi sesuatu aksi (Event). Dengan begitu, kita bisa melakukan fungsionalitas dalam kondisi tertentu secara otomatis. beberapa event listener yang basic adalah :
+* `onclick`, listener ketika terjadi event mouseclick.
+* `onmouseover`, listener ketika terjadi event mouse hover
+* `onchange`, listener ketika terjadi perubahan pada konten elemen.
+
+<br>
+
+**example**
+```html
+<head>
+   <script>
+      function changeTitle(e){
+        const pageTitle = document.getElementByID("title");   // menemukan (referencing) elemen dengan id "title"
+        pageTitle.innerHTML = "WORLD";  // Mengubah (memanipulasi) konten dari heading
+        e.innerHTML = "title changed!"; // mengubah teks pada button.
+      }
+   </script> 
+</head>
+<body>
+    <div>
+        <h1 id="title">HELLO</h1>
+        <button class="content" type="button" onclick="changeTitle(this)">change title</button> --> menggunakan onclick event listener
+    </div>
+</body>
+```
+<br>
+
+selain builtin event listener dari tag, kita juga bisa menambahkan event listener , dengan menggunakan `element.addEventListener("EVENTNAME", callback_function)`
+
+**example**
+```html
+<head>
+   <script>
+    //menggunakan event listener untuk mengeksekusi setName(), ketika halaman web telah terload sepenuhnya
+      window.addEventListener("DOMContentLoaded", setName) 
+      function setName(){
+        const target = document.getElementById("name");
+        target.innerHTML = "USER69"
+      }
+   </script> 
+</head>
+<body>
+    <div>
+        <h1 id="title">HELLO <span></span></h1>
+    </div>
+</body>
+
+untuk list lebih lengkapnya, silahkan kunjungi laman web https://www.w3schools.com/jsref/dom_obj_event.asp
+<br>
+
 reference:
 1. https://pragusga.gitlab.io/bismit/HTML.html by Mas Taufik Bismit 2021
 2. HTML https://www.w3schools.com/html/
 3. CSS https://www.w3schools.com/css/
+4. JS DOM 
