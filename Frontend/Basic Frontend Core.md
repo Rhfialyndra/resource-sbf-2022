@@ -268,6 +268,7 @@ __syntax__
 <br>
 
 **How to Apply CSS to HTML?**
+
 ![how to apply css to html](https://gitlab.com/it-force/amfm/-/raw/master/gambar/img6.PNG)
 
 <br>
