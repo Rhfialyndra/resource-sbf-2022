@@ -246,18 +246,23 @@ Ketika membuat web, kita tentunya ingin laman web kita menjadi menarik. oleh kar
 CSS merupakan singkatan dari **C**ascading **S**tlye **S**heet. Dengan CSS, kita bisa memberikan style (layouting, warna, ukuran, dll) sehingga laman web kita menjadi lebih estetik.
 
 __Analogi html + css + js__
+
 ![html,css,js analogy](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/06/HTML-vs-CSS-vs-JavaScript-512x300.png)
+
 taken from https://www.edureka.co/blog/javascript-tutorial/
 
 <br>
 
 __HTML+CSS vs HTML-only__
+
 ![htmlcss vs html only](https://c.jorcus.com/wp-content/uploads/2020/05/21125641/CSS-vs-no-CSS.jpg)
+
 taken from https://jorcus.com/getting-started-with-css/
 
 <br>
 
 __syntax__
+
 ![css syntax](https://www.w3schools.com/css/img_selector.gif)
 
 <br>
@@ -309,7 +314,9 @@ Fungsionalitas ini tidak bisa dilakukann oleh HTML maupun CSS, karena keduanya b
 <br>
 
 __DOM__
+
 ![DOM Tree](https://www.w3schools.com/js/pic_htmltree.gif)
+
 DOM merupakan singkatan dari **D**ocument **O**bject **M**odel. DOM merupakan sebuah platform atau interface yang *language-agnostic* yang memungkinkan script program mengakses dan atau mengubah konten, struktur dan ,style document secara dinamis.
 <br>
 
